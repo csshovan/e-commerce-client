@@ -50,7 +50,7 @@ const Footer = () => {
                 </nav>
 
                 <aside>
-                    <p>Developed By <span className='font-bold  text-red-600'>Shovan Saha</span></p>
+                    <p>Developed By <span className='font-bold  text-red-600'>CSS Company</span></p>
                 </aside>
             </footer>
         </div>

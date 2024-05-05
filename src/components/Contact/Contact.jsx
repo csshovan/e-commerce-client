@@ -61,7 +61,7 @@ export const Contact = () => {
                   adress
                 </h2>
                 <p className="text-lg   mt-2   text-grey font-light">
-                  685 Market Street San,
+                  685 Tangail,
                 </p>
                 <p className="text-lg text-grey font-light">
                   Dhaka, Bangladesh
@@ -81,7 +81,7 @@ export const Contact = () => {
                   Call US
                 </h2>
                 <p className="text-lg  mt-2 font-light  text-grey ">
-                  0190921755
+                  0183736633
                 </p>
                 <p className="text-lg text-grey font-light">
                   6463-222-22-8888-22
@@ -101,10 +101,10 @@ export const Contact = () => {
                   Mail us
                 </h2>
                 <p className="text-lg  mt-2  break-words  text-grey font-light">
-                  ku4306053@gmail.com
+                  eshop@gmail.com
                 </p>
                 <p className="text-lg text-grey break-words font-light">
-                  Ku@yahoo.com
+                  me@yahoo.com
                 </p>
                 <div className="card-actions justify-center"></div>
               </div>
@@ -124,7 +124,7 @@ export const Contact = () => {
                   24/7 6584557
                 </p>
                 <p className="text-lg text-grey font-light">
-                  Gazipur ,Dhaka ,Bangladesh
+                  Tangail ,Dhaka ,Bangladesh
                 </p>
                 <div className="card-actions justify-center"></div>
               </div>

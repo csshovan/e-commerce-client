@@ -12,6 +12,7 @@ import toast from "react-hot-toast";
 import { Helmet } from "react-helmet";
 import { TbCurrencyTaka } from "react-icons/tb";
 
+
 const Carts = () => {
   const [cart, refetch, isLoading] = useCart();
   const { user } = useAuth();
@@ -200,7 +201,9 @@ const Carts = () => {
                         </td>
                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                           <p className="text-gray-900 whitespace-no-wrap">
-                            ${calculatePrice(item)}
+                            <div className="flex justify-center items-center">
+                              <TbCurrencyTaka></TbCurrencyTaka>{calculatePrice(item)}  
+                            </div>
                           </p>
                         </td>
 
@@ -232,7 +235,7 @@ const Carts = () => {
               <p>Total Items: {cart.length}</p>
               <p className="flex items-center">Total Price: <TbCurrencyTaka size={20} />{cartSubTotal}</p>
               {/* <button className='btn bg-violet-600 text-white hover:text-black' onClick={()=>setIsOpen(true)}>Proceed Checkout</button> */}
-              {count === cart.length ? (
+              {count  >= cart.length ? (
                 <Link
                   to={"/checkout"}
                   className="btn bg-violet-600 text-white hover:text-black"

@@ -35,6 +35,7 @@ const SignUp = () => {
     const password = form.password.value;
     const repassword = form.repassword.value;
     const image = form.image.files[0];
+    const phone = form.phone.value;
 
     if (password !== repassword) {
       toast.error("password not match");
@@ -57,7 +58,7 @@ const SignUp = () => {
       });
 
       //save user in db
-      const dbresponse = await saveUser(result?.user, "unverified");
+      const dbresponse = await saveUser(result?.user,{phone}, "unverified");
       console.log(dbresponse);
 
       // await getToken(result?.user?.email)

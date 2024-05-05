@@ -37,9 +37,9 @@ const Message = () => {
     }
 
     // calculate distance 
-    const targetLatitude = 24.231936   ; //24.228659  
+    const targetLatitude = 24.236765  ; //24.228659  
 
-    const targetLongitude =  89.889178;  
+    const targetLongitude =  89.890950;  
 
     const radiusInMeters = 1500; // 1 kilometer
     

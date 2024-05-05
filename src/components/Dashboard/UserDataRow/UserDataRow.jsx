@@ -28,7 +28,7 @@ const UserDataRow = ({ item, index }) => {
                             refetch();
                             Swal.fire(
                                 'Deleted!',
-                                'Your Service Deleted',
+                                'User Deleted',
                                 'success'
                             )
 

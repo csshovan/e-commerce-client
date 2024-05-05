@@ -1,6 +1,6 @@
 import axiosSecure from ".";
 
-export const saveUser = async (user, status) => {
+export const saveUser = async (user,{phone},status) => {
   console.log(status);
   const currentUser = {
     email: user.email,
@@ -9,6 +9,7 @@ export const saveUser = async (user, status) => {
     message: "notsent",
     image: user.photoURL,
     name: user?.displayName,
+    phone: phone,
   };
 
   const { data } = await axiosSecure.put(`/users/${user?.email}`, currentUser);

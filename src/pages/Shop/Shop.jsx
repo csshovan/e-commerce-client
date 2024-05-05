@@ -31,7 +31,7 @@ const Shop = () => {
     const brand = params.get('brand') ? params.get('brand') : 'All Brands'
     const name = params.get('name') ? params.get('name') : '';
     const sortOrder = params.get('sortOrder') ? params.get('sortOrder') : 'Default';
-    const limit = 5;
+    const limit = 6;
 
 
     const getProducts = async () => {
