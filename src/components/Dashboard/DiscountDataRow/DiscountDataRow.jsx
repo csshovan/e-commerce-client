@@ -53,7 +53,7 @@ const DiscountDataRow = ({ item, index,refetch,handleUpdate }) => {
                 <p className='text-gray-900 whitespace-no-wrap'>{item?.brand_name}</p>
             </td>
             <td className='px-5 py-5 border-b text-center border-gray-200 bg-white text-sm'>
-                <p className='text-gray-900 whitespace-no-wrap'>{item?.price}</p>
+                <p className='text-gray-900 whitespace-no-wrap'>{item?.price}%</p>
             </td>
             <td className='px-5 py-5 border-b text-center border-gray-200 bg-white text-sm'>
                 <p className='text-gray-900 whitespace-no-wrap'>{item?.cupon}</p>

@@ -8,6 +8,7 @@ import { RiRefundFill } from "react-icons/ri";
 import { LuSmartphone } from "react-icons/lu";
 import { Helmet } from "react-helmet";
 import * as XLSX from "xlsx";
+import { TbCurrencyTaka } from "react-icons/tb";
 
 export const Dashboard = () => {
   const currentMonth = new Date().getMonth();
@@ -130,7 +131,7 @@ export const Dashboard = () => {
             <div className="rounded-lg shadow-lg py-10 px-3">
               <div className="flex  justify-between items-center">
                 <div className="bg-lime-500 p-4 rounded-lg ">
-                  <BsCurrencyDollar size={30} color="white" />
+                  <TbCurrencyTaka size={30} color="white" />
                 </div>
                 <div>
                   <p className="font-extralight">
@@ -202,7 +203,7 @@ export const Dashboard = () => {
                 Order in <span className="text-blue-700">{selectedYear}</span>
               </h1>
               <p className="font-bold text-green-900">
-                $ {dashboardData?.yearTotalOrder}
+                 {dashboardData?.yearTotalOrder}
               </p>
             </div>
 
@@ -211,7 +212,7 @@ export const Dashboard = () => {
                 Refund in <span className="text-blue-700">{selectedYear}</span>
               </h1>
               <p className="font-bold text-red-900">
-                $ {dashboardData?.yearTotalRefund}
+                 {dashboardData?.yearTotalRefund}
               </p>
             </div>
           </div>

@@ -18,14 +18,10 @@ import ClientMenu from './ClientMenu'
 
 
 const Sidebar = () => {
-    const [toggle, setToggle] = useState(false)
     const [isActive, setActive] = useState(false)
     const [role] = useRole();
 
-    //   For guest/host menu item toggle button
-    const toggleHandler = event => {
-        setToggle(event.target.checked)
-    }
+   
     // Sidebar Responsive Handler
     const handleToggle = () => {
         setActive(!isActive)
